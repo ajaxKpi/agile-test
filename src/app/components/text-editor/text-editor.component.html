@@ -1,0 +1,15 @@
+<div
+ contenteditable="true"
+ class="text-editor-container"
+ (input)="changeModel($event)"
+ [innerHTML]="textInView | addSpan"
+>
+
+</div>
+
+
+<context-menu>
+  <ng-template contextMenuItem let-item (execute)="contextItemSelected($event)">
+   first Item
+  </ng-template>
+</context-menu>
